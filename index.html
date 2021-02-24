@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Student Register Web App</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1 style="margin-top: 20; margin-bottom: 20;">List Of Students In The Class</h1>
+        </center>
+        <div>
+            <span>1.</span>
+            <input type="text" placeholder="Name of the student" id="student_1">
+            <br>
+            <span>2.</span>
+            <input type="text" placeholder="Name of the student" id="student_2">
+            <br>
+            <span>3.</span>
+            <input type="text" placeholder="Name of the student" id="student_3">
+            <br>
+            <span>4.</span>
+            <input type="text" placeholder="Name of the student" id="student_4">
+            <br>
+            <span>5.</span>
+            <input type="text" placeholder="Name of the student" id="student_5">
+            <br>
+        </div>
+        <span>
+        <button id="submitbutton" onclick="submitfun()">Submit</button>
+        <button onclick="sortfun()" id="sortbutton">Sort</button>
+        </span>
+        <div id="display_names"></div>
+        <script>
+            document.getElementById("sortbutton").style.display="inline-block";
+        </script>
+    </body>
+</html>
